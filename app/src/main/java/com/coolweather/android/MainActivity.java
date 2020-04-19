@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         // 从 SharedPreferences 中读取缓存数据
         if(prefs.getString("weather",null)!=null){
-            // 之前请求过则直接跳转到天气信息
+            // 之前请求过则直接跳转到天气信息.
             Intent intent = new Intent(this, WeatherActivity.class);
             startActivity(intent);
             finish();
